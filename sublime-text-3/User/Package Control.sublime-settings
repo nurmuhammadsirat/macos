@@ -1,0 +1,32 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"ApplySyntax",
+		"auto-save",
+		"Babel",
+		"Better Rails",
+		"Better RSpec",
+		"Better Ruby",
+		"Copy Filepath With Line Numbers",
+		"Cucumber",
+		"Cucumber Step Finder",
+		"Dockerfile Syntax Highlighting",
+		"GitGutter",
+		"MarkdownPreview",
+		"Package Control",
+		"RobotFrameworkAssistant",
+		"SCSS",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-ruby",
+		"TypeScript Syntax"
+	],
+	"repositories":
+	[
+		"https://gist.githubusercontent.com/fnando/56393d3900af55bf9e94/raw/repositories.json"
+	]
+}

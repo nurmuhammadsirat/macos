@@ -1,0 +1,7 @@
+[
+  { "keys": ["super+b"], "command": "goto_definition" },
+  { "keys": ["super+alt+b"], "command": "build" },
+  { "keys": ["super+alt+left"], "command": "jump_back" },
+  { "keys": ["super+alt+right"], "command": "jump_forward" },
+  { "keys": ["ctrl+shift+s"], "command": "auto_save" },
+]
