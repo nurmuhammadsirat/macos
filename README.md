@@ -1,4 +1,6 @@
-# macOS Preferences
+# macOS
+
+This is a simple repo for me to setup and sync my settings.
 
 ## iTerm
 
@@ -18,68 +20,33 @@ Start ST3 to initialize all packages.
 
 ## Software
 
-### XCode
+Run `initial-setup.sh` to install all required software. This is a one-time script for a fresh macOS.
 
-```
-xcode-select --install
-```
+It does the following:
+- Install XCode
+- Install Homebrew
+- Install the following required software using `brew` or `brew cask`:
+  - Git
+  - Docker
+  - Autojump
+  - iTerm2
+  - Sublime Text 3
+  - Intellij Ultimate
+  - Firefox
+  - Alfred
+  - Jumpcut
+  - Postman
+  - KeepassX
+  - Google Backup-And-Sync (for Google drive)
+  - private internet access VPN
+  - VLC
+  - Slack
+  - Telegram
+  - Whatsapp
+  - Virtualbox and extension pack
+- Install rbenv and ruby-build.
+- Install ZSH, Oh-My-ZSH and [zsh autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
-### Homebrew
+Pending automation as there is no cask formulae for the following:
+- [Better Touch Tool](https://folivora.ai/)
 
-```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-brew tap caskroom/cask
-```
-
-### Required Software
-
-#### Via brew/cask
-
-```
-brew install git docker autojump
-
-brew cask install iterm2 sublime-text intellij-idea firefox alfred jumpcut postman keepassx google-backup-and-sync private-internet-access vlc
-```
-
-#### Cask unavailable
-
-* [Better Touch Tool](https://folivora.ai/)
-
-### Required Shell
-
-```
-brew install zsh zsh-completions
-
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-
-chsh -s /bin/zsh
-```
-
-### Ruby
-
-```
-brew install rbenv ruby-build
-
-rbenv install 2.6.2 # Or whatever Ruby version you want.
-```
-
-### Misc Software
-
-```
-brew cask install slack
-
-brew cask install telegram
-
-brew cask install whatsapp
-
-brew cask install java
-
-brew cask install microsoft-office
-
-brew cask install google-drive-file-stream
-
-brew cask install virtualbox virtualbox-extension-pack
-```
