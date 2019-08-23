@@ -33,6 +33,12 @@ echo "- BetterTouchTool: https://folivora.ai/"
 echo "Installing rbenv and ruby-build..."
 brew install rbenv ruby-build
 
+echo "Setting up git aliases"
+git config --global alias.co checkout
+git config --global alias.cm 'commit -m'
+git config --global alias.br 'branch -a'
+git config --global alias.st status
+
 echo "Installing ZSH..."
 brew install zsh zsh-completions
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
