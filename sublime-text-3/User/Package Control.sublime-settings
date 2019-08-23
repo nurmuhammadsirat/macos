@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"Advanced CSV",
 		"ApplySyntax",
 		"auto-save",
 		"Babel",
@@ -18,6 +19,7 @@
 		"GitGutter",
 		"MarkdownPreview",
 		"Package Control",
+		"Pretty JSON",
 		"RobotFrameworkAssistant",
 		"SCSS",
 		"SideBarEnhancements",
