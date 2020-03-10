@@ -17,6 +17,7 @@
 		"Cucumber Step Finder",
 		"Dockerfile Syntax Highlighting",
 		"GitGutter",
+		"Indent XML",
 		"MarkdownPreview",
 		"Package Control",
 		"Pretty JSON",
@@ -25,6 +26,7 @@
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-ruby",
+		"Sync View Scroll",
 		"TypeScript Syntax"
 	],
 	"repositories":
