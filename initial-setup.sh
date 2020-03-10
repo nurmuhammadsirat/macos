@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 echo "Installing XCode..."
 xcode-select --install
 
@@ -22,13 +21,7 @@ echo "  google-backup-and-sync, private-internet-access, vlc,"
 echo "  slack, telegram, whatsapp, virtualbox, virtualbox-extension-pack"
 brew cask install iterm2 sublime-text intellij-idea \
   firefox alfred jumpcut postman keepassx google-backup-and-sync \
-  private-internet-access vlc slack telegram whatsapp
-
-echo "The following software may require user input to allow installation. Please install them manually."
-echo "- brew cask install virtualbox virtualbox-extension-pack"
-
-echo "The following software does not have casks. Manually install them:"
-echo "- BetterTouchTool: https://folivora.ai/"
+  private-internet-access vlc slack telegram whatsapp rectangle
 
 echo "Installing rbenv and ruby-build..."
 brew install rbenv ruby-build
@@ -36,15 +29,19 @@ brew install rbenv ruby-build
 echo "Setting up git aliases"
 git config --global alias.co checkout
 git config --global alias.cm 'commit -m'
-git config --global alias.br 'branch -a'
-git config --global alias.st status
 
 echo "Installing ZSH..."
 brew install zsh zsh-completions
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+chsh -s /bin/zsh
+
+echo "Installing oh-my-zsh..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 echo "NOTE: to activate zsh-completions, add the plugin in ~/.zshrc:"
 echo "  plugins=(zsh-autosuggestions)"
 
-chsh -s /bin/zsh
+echo "The following software does not have casks. Manually install them:"
+echo "- BetterTouchTool: https://folivora.ai/"
